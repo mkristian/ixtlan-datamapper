@@ -21,6 +21,7 @@ Gem::Specification.new do |s|
   s.test_files += Dir['spec/**/*_spec.rb']
   s.add_runtime_dependency 'virtus', '~>1.0'
   s.add_runtime_dependency 'dm-aggregates'
+  s.add_development_dependency 'rake'
 end
 
 # vim: syntax=Ruby
