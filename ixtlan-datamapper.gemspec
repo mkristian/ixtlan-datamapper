@@ -21,6 +21,10 @@ Gem::Specification.new do |s|
   s.test_files += Dir['spec/**/*_spec.rb']
   s.add_runtime_dependency 'virtus', '~>1.0'
   s.add_runtime_dependency 'dm-aggregates', '~>1.2'
+  s.add_development_dependency 'dm-timestamps', '~>1.2'
+  s.add_development_dependency 'dm-migrations', '~>1.2'
+  s.add_development_dependency 'dm-validations', '~>1.2'
+  s.add_development_dependency 'dm-sqlite-adapter', '~>1.2'
   s.add_development_dependency 'rake', '~>10.3'
   s.add_development_dependency 'minitest', '~>5.3'
 end
