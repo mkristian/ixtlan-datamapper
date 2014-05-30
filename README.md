@@ -2,7 +2,7 @@
 
 * [![Build Status](https://secure.travis-ci.org/mkristian/ixtlan-datamapper.png)](http://travis-ci.org/mkristian/ixtlan-datamapper)
 * [![Dependency Status](https://gemnasium.com/mkristian/ixtlan-datamapper.png)](https://gemnasium.com/mkristian/ixtlan-datamapper)
-* [![Code Climate](https://codeclimate.com/mkristian/ixtlan-datamapper.png)](https://codeclimate.com/github/mkristian/ixtlan-datamapper)
+* [![Code Climate](https://codeclimate.com/github/mkristian/ixtlan-datamapper.png)](https://codeclimate.com/github/mkristian/ixtlan-datamapper)
 
 
 it adds optimistic persistence support to DataMapper and ActveRecord using the updated\_at property/attribute which is automatically updated on any change of the model (for datamapper you need dm-timestamps for that). to load a model use `optimistic_get`/`optimistic_get!`/`optimistic_find` respectively where the first argument is the last `updated_at` value which the client has. if the client data is uptodate then the `optimistic_XYZ` method will return the database entity otherwise raise an exception or return nil respectively.
