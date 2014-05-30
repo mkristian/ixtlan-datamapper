@@ -1,4 +1,5 @@
 language: ruby
+bundler_args: --without copyright
 rvm:
   - 1.9.3
   - 2.0.0
@@ -7,5 +8,3 @@ rvm:
   - jruby-19mode
 #  - jruby-20mode
   - jruby-head
-before_install:
-  - sudo apt-get update && sudo apt-get install libicu-dev
